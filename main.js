@@ -31,5 +31,7 @@ requirejs(["jquery", "ramda"], ($, { compose, curry, map, prop }) => {
   const app = compose(Impure.getJson(render), Client.url);
   const search = curry((query) => app(query));
 
-  search("cats");
+  /************ Export ************/
+
+  window.search = search;
 });

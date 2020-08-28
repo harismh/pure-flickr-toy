@@ -6,6 +6,15 @@
   </head>
   <body>
     <h1>Pure Flickr</h1>
+    <input
+      id="input"
+      type="text"
+      placeholder="Search for photos..."
+      aria-placeholder="Search for photos..."
+    />
+    <button onclick="search(document.getElementById('input').value)">
+      Search
+    </button>
     <main id="main" class="main"></main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js"></script>
     <script src="main.js"></script>
